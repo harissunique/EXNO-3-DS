@@ -31,8 +31,22 @@ We use this categorical data encoding technique when the features are nominal(do
 • Yeojohnson method
 
 # CODING AND OUTPUT:
-       # INCLUDE YOUR CODING AND OUTPUT SCREENSHOTS HERE
-# RESULT:
-       # INCLUDE YOUR RESULT HERE
+```py
+import pandas as pd
+df=pd.read_csv("Encoding Data.csv")
+df
+```
+![alt text](<Screenshot 2024-09-27 161706.png>)
+```py
+from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
+pm=['Hot','Warm','Cold']
+e1=OrdinalEncoder(categories=[pm])
+e1.fit_transform(df[["ord_2"]])
+```
+![alt text](<Screenshot 2024-09-27 161711.png>)
+![alt text](<Screenshot 2024-09-27 161722.png>) ![alt text](<Screenshot 2024-09-27 161728.png>) ![alt text](<Screenshot 2024-09-27 161740.png>) ![alt text](<Screenshot 2024-09-27 161748.png>) ![alt text](<Screenshot 2024-09-27 161755.png>) ![alt text](<Screenshot 2024-09-27 161800.png>) ![alt text](<Screenshot 2024-09-27 161807.png>)![alt text](<Screenshot 2024-09-27 161933.png>) ![alt text](<Screenshot 2024-09-27 161813.png>) ![alt text](<Screenshot 2024-09-27 161828.png>) ![alt text](<Screenshot 2024-09-27 161834.png>) ![alt text](<Screenshot 2024-09-27 161859.png>) ![alt text](<Screenshot 2024-09-27 161905.png>) ![alt text](<Screenshot 2024-09-27 161910.png>) ![alt text](<Screenshot 2024-09-27 161922.png>) ![alt text](<Screenshot 2024-09-27 161927.png>)![alt text](<Screenshot 2024-09-27 161941.png>) ![alt text](<Screenshot 2024-09-27 161946.png>) ![alt text](<Screenshot 2024-09-27 161952.png>) ![alt text](<Screenshot 2024-09-27 162006.png>) ![alt text](<Screenshot 2024-09-27 162044.png>)
 
+
+# RESULT:
+       Finally, perform Feature Encoding and Transformation process is executed successfully.
        
