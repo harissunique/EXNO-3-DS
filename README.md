@@ -48,5 +48,5 @@ e1.fit_transform(df[["ord_2"]])
 
 
 # RESULT:
-       Finally, perform Feature Encoding and Transformation process is executed successfully.
+Finally, perform Feature Encoding and Transformation process is executed successfully.
        
